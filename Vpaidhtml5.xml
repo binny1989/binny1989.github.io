@@ -23,12 +23,12 @@ https://ad-audit.tubemogul.com/audit/e.png?event=blank
 <Linear>
 <Duration>00:00:30</Duration>
 <MediaFiles>
-<MediaFile delivery="progressive" type="application/x-shockwave-flash" bitrate="500" width="400" height="300" apiFramework="VPAID">
+<MediaFile delivery="progressive" type="application/x-shockwave-flash" bitrate="500" width="300" height="250" apiFramework="VPAID">
 <![CDATA[
 https://playtime.tubemogul.com/flash/tunit-2016-04-13.swf?feedURL=https%3A%2F%2Fas-pub.tubemogul.com%2Ffeed%2Fplacement.js%3Fad_id%3Dm5rCHirEvpX7p1VYFvpS%26id%3Dr9uFcnRjWI6LcHYmPbnD%26tm_auction_id%3DC9ISQAiTEeabByIACx6FoA.0%26barefeed%3DT%26rand%3D1180474119%26psId%3D3ULOuOEPIKm4jjXMIVZG%26page_url%3Ddailymail.co.uk%26seller_id%3D&paId=m5rCHirEvpX7p1VYFvpS&framework=vpaid&psId=3ULOuOEPIKm4jjXMIVZG&cd=%7B%22zip%22%3A%2210011%22%2C%22fbd%22%3A%7B%22ssb%22%3A%22F%22%2C%22psb%22%3A%22F%22%2C%22pd%22%3A%22dailymail.co.uk%22%2C%22mpw%22%3A%220%22%2C%22mph%22%3A%220%22%2C%22aburl%22%3A%22%22%7D%7D&price=1.00&bi=B07hLpty8oP2iYQSb6irHkHmfm3BKTXALUL6MLUwb57TswnFPRB18Ghjd6adV-d8dRanPl_gh1awL87wUoMoaXNPzUv0FqGNzxihGsDAumccInAHKZ9tS1qEB8zc3GpmZlIDU3jzbdJIkOtSzIlW6YboQ&pt=imp&cpId=571739&plcId=1013913&mpId=68675&adId=2480376597&psIdNum=50407&iasMon=T&did=-5173757325424755109&didtype=TM_COOKIE_ID&moatenabled=t&moatfees=t
 ]]>
 </MediaFile>
-<MediaFile id="GDFP" delivery="progressive" type="video/mp4" apiFramework="VPAID"  width="400" height="300" bitrate="500" scalable="true" maintainAspectRatio="true">
+<MediaFile id="GDFP" delivery="progressive" type="video/mp4" apiFramework="VPAID"  width="300" height="250" bitrate="500" scalable="true" maintainAspectRatio="true">
 <![CDATA[
 https://playtime.tubemogul.com/ad_promoted_videos/9027903_MHQCw3IYhSuBQVTomWLJ_1461247004.mp4
 ]]>
