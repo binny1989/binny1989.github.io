@@ -69,7 +69,7 @@ Ads.prototype.resume = function() {
 
 Ads.prototype.resize = function(width, height) {
   if (this.adsManager_) {
-    this.adsManager_.resize(width, height, google.ima.ViewMode.FULLSCREEN);
+    this.adsManager_.resize(width, heigth, google.ima.ViewMode.FULLSCREEN);
   }
 };
 
