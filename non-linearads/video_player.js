@@ -11,8 +11,8 @@ var VideoPlayer = function() {
   this.adContainer = document.getElementById('adcontainer');
   this.videoPlayerContainer_ = document.getElementById('videoplayer');
 
-  this.width = 640;
-  this.height = 360;
+  this.width = "auto";
+  this.height = "auto";
 };
 
 VideoPlayer.prototype.preloadContent = function(contentLoadedAction) {
