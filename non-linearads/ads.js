@@ -48,9 +48,9 @@ Ads.prototype.requestAds = function(adTagUrl) {
   adsRequest.adTagUrl = adTagUrl;
   adsRequest.linearAdSlotWidth = this.videoPlayer_.width;
   adsRequest.linearAdSlotHeight = this.videoPlayer_.height;
-  adsRequest.nonLinearAdSlotWidth = this.videoPlayer_.width;
+  adsRequest.nonLinearAdSlotWidth = 400;
   console.log(adsRequest.nonLinearAdSlotWidth);
-  adsRequest.nonLinearAdSlotHeight = this.videoPlayer_.height;
+  adsRequest.nonLinearAdSlotHeight = 50;
   console.log(adsRequest.nonLinearAdSlotHeight);
   this.adsLoader_.requestAds(adsRequest);
 };
@@ -69,7 +69,7 @@ Ads.prototype.resume = function() {
 
 Ads.prototype.resize = function(width, height) {
   if (this.adsManager_) {
-    this.adsManager_.resize(400, 50, google.ima.ViewMode.FULLSCREEN);
+    this.adsManager_.resize(width, height, google.ima.ViewMode.FULLSCREEN);
   }
 };
 
