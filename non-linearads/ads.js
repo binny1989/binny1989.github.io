@@ -69,7 +69,7 @@ Ads.prototype.resume = function() {
 
 Ads.prototype.resize = function(width, height) {
   if (this.adsManager_) {
-    this.adsManager_.resize(adsRenderingSettings.AUTO_SCALE, adsRenderingSettings.AUTO_SCALE, google.ima.ViewMode.NORMAL);
+    this.adsManager_.resize(938,528, google.ima.ViewMode.NORMAL);
   }
 };
 
@@ -82,7 +82,7 @@ Ads.prototype.onAdsManagerLoaded_ = function(adsManagerLoadedEvent) {
   this.application_.log('Ads loaded.');
   var adsRenderingSettings = new google.ima.AdsRenderingSettings();
   adsRenderingSettings.restoreCustomPlaybackStateOnAdBreakComplete = true;
-  adsRenderingSettings.AUTO_SCALE;
+  //adsRenderingSettings.AUTO_SCALE;
   this.adsManager_ = adsManagerLoadedEvent.getAdsManager(
       this.videoPlayer_.contentPlayer, adsRenderingSettings);
   this.processAdsManager_(this.adsManager_);
