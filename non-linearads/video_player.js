@@ -11,8 +11,8 @@ var VideoPlayer = function() {
   this.adContainer = document.getElementById('adcontainer');
   this.videoPlayerContainer_ = document.getElementById('videoplayer');
 
-  this.width = "auto";
-  this.height = "auto";
+  this.width = 640;
+  this.height = 360;
 };
 
 VideoPlayer.prototype.preloadContent = function(contentLoadedAction) {
@@ -62,8 +62,8 @@ VideoPlayer.prototype.resize = function(
   this.videoPlayerContainer_.style.left = left + 'px';
   this.videoPlayerContainer_.style.width = width + 'px';
   this.videoPlayerContainer_.style.height = height + 'px';
-  this.contentPlayer.style.width = width + 'px';
-  this.contentPlayer.style.height = height + 'px';
+  this.contentPlayer.style.width = 400 + 'px';
+  this.contentPlayer.style.height = 50 + 'px';
 };
 
 VideoPlayer.prototype.registerVideoEndedCallback = function(callback) {
