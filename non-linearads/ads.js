@@ -48,9 +48,9 @@ Ads.prototype.requestAds = function(adTagUrl) {
   adsRequest.adTagUrl = adTagUrl;
   adsRequest.linearAdSlotWidth = this.videoPlayer_.width;
   adsRequest.linearAdSlotHeight = this.videoPlayer_.height;
-  adsRequest.nonLinearAdSlotWidth = this.videoPlayer_.width;
+  adsRequest.nonLinearAdSlotWidth = 480;
   console.log(adsRequest.nonLinearAdSlotWidth);
-  adsRequest.nonLinearAdSlotHeight = this.videoPlayer_.height;
+  adsRequest.nonLinearAdSlotHeight = 70;
   console.log(adsRequest.nonLinearAdSlotHeight);
   this.adsLoader_.requestAds(adsRequest);
 };
