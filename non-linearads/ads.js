@@ -48,9 +48,9 @@ Ads.prototype.requestAds = function(adTagUrl) {
   adsRequest.adTagUrl = adTagUrl;
   adsRequest.linearAdSlotWidth = this.videoPlayer_.width;
   adsRequest.linearAdSlotHeight = this.videoPlayer_.height;
-  adsRequest.nonLinearAdSlotWidth = 480;
+  adsRequest.nonLinearAdSlotWidth = this.videoPlayer_.width;
   console.log(adsRequest.nonLinearAdSlotWidth);
-  adsRequest.nonLinearAdSlotHeight = 70;
+  adsRequest.nonLinearAdSlotHeight = this.videoPlayer_.height;
   console.log(adsRequest.nonLinearAdSlotHeight);
   this.adsLoader_.requestAds(adsRequest);
 };
@@ -82,7 +82,7 @@ Ads.prototype.onAdsManagerLoaded_ = function(adsManagerLoadedEvent) {
   this.application_.log('Ads loaded.');
   var adsRenderingSettings = new google.ima.AdsRenderingSettings();
   adsRenderingSettings.restoreCustomPlaybackStateOnAdBreakComplete = true;
-  //adsRenderingSettings.AUTO_SCALE;
+  adsRenderingSettings.AUTO_SCALE;
   this.adsManager_ = adsManagerLoadedEvent.getAdsManager(
       this.videoPlayer_.contentPlayer, adsRenderingSettings);
   this.processAdsManager_(this.adsManager_);
