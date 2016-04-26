@@ -1,0 +1,36 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast_2.0.1-creativeView.xsd" version="2.0">
+<Ad id="moat_ad">
+<InLine>
+<AdSystem>2.0</AdSystem>
+<AdTitle>
+Initiative_Boeing_Business_Insider_Innovators_Sponsorship_Preroll_15_127497081
+</AdTitle>
+<Impression/>
+<Creatives>
+<Creative>
+<Linear>
+<Duration>00:00:15</Duration>
+<MediaFiles>
+<MediaFile type="application/x-shockwave-flash" apiFramework="VPAID" height="360" width="640" delivery="progressive">
+<![CDATA[
+http://imasdk.googleapis.com/flash/sdkloader/vpaid1adsdk.swf?adTagUrl=http%3A%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D640x480%26iu%3D%2F124319096%2Fexternal%2Futility_samples%26ciu_szs%3D300x250%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dxml_vast2%26unviewed_position_start%3D1%26cust_params%3Dsample_ct%253Dlinearvpaid%26correlator%3D
+]]>
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+<Creative>
+<CompanionAds>
+<Companion width="300" height="250">
+<HTMLResource>
+<![CDATA[
+<img id="moatCompanionDiv_300x250" onerror="(function(e){e.onload.call(e);return false;})(this)" onload="(function(e){if(e&&e.nodeName=='IMG') e.setAttribute('onload',''); else return; var a=document.createElement('a');a.href='';var p=((window&&window.location&&window.location.protocol)||((a=a.href.match(/^https:/))&&a&&a[0]))=='https:'?'https://z.':'http://js.',s=document.createElement('script');s.type='text/javascript';(e&&e.parentNode&&e.parentNode.insertBefore(s,e));s.src=p+'moatads.com/moatvpaidsamp934jl/moatse.js#300x250'; return false;})(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="0" height="0" style="display:none;">
+]]>
+</HTMLResource>
+</Companion>
+</CompanionAds>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
