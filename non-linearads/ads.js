@@ -87,7 +87,7 @@ Ads.prototype.onAdsManagerLoaded_ = function(adsManagerLoadedEvent) {
       this.videoPlayer_.contentPlayer, adsRenderingSettings);
   this.processAdsManager_(this.adsManager_);
 };
-
+ 
 Ads.prototype.processAdsManager_ = function(adsManager) {
   if (adsManager.isCustomClickTrackingUsed()) {
     this.customClickDiv_.style.display = 'table';
