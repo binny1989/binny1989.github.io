@@ -7,11 +7,14 @@
  * Shows how to use the IMA SDK to request and display ads.
  */
 var Ads = function(application, videoPlayer) {
+  console.log(this);
   this.application_ = application;
   this.videoPlayer_ = videoPlayer;
   this.customClickDiv_ = document.getElementById('customClick');
-  this.contentCompleteCalled_ = false;
+  console.log(this.customClickDiv_);
+  this.contentCompleteCalled_ =false;
   google.ima.settings.setVpaidMode(google.ima.ImaSdkSettings.VpaidMode.ENABLED);
+  
   // Call setLocale() to localize language text and downloaded swfs
   // google.ima.settings.setLocale('fr');
   this.adDisplayContainer_ =
@@ -19,7 +22,9 @@ var Ads = function(application, videoPlayer) {
           this.videoPlayer_.adContainer,
           this.videoPlayer_.contentPlayer,
           this.customClickDiv_);
+      console.log(this.adDisplayContainer_);
   this.adsLoader_ = new google.ima.AdsLoader(this.adDisplayContainer_);
+  console.log(this.adsLoader_ );
   this.adsManager_ = null;
 
   this.adsLoader_.addEventListener(
@@ -30,6 +35,7 @@ var Ads = function(application, videoPlayer) {
   this.adsLoader_.addEventListener(
       google.ima.AdErrorEvent.Type.AD_ERROR,
       this.onAdError_,
+      //console.log(this.onAdError_);
       false,
       this);
 };
@@ -69,7 +75,9 @@ Ads.prototype.resume = function() {
 
 Ads.prototype.resize = function(width, height) {
   if (this.adsManager_) {
-    this.adsManager_.resize(width,height, google.ima.ViewMode.NORMAL);
+    console.log("width:"+ width+ "height"+ height);
+    this.adsManager_.resize(width,heights, google.ima.ViewMode.FULLSCREEN);
+    //this.adsManager_.resize(480,70, google.ima.ViewMode.NORMAL);
   }
 };
 
@@ -80,21 +88,24 @@ Ads.prototype.contentEnded = function() {
 
 Ads.prototype.onAdsManagerLoaded_ = function(adsManagerLoadedEvent) {
   this.application_.log('Ads loaded.');
+  console.log(this.application_.log);
   var adsRenderingSettings = new google.ima.AdsRenderingSettings();
   adsRenderingSettings.restoreCustomPlaybackStateOnAdBreakComplete = true;
-  adsRenderingSettings.AUTO_SCALE = 0;
+  adsRenderingSettings.AUTO_SCALE = -1; 
+  //adsRenderingSettings.autoAlign = true; 
   this.adsManager_ = adsManagerLoadedEvent.getAdsManager(
       this.videoPlayer_.contentPlayer, adsRenderingSettings);
   this.processAdsManager_(this.adsManager_);
+  console.log(this.adsManager_);
 };
- 
 Ads.prototype.processAdsManager_ = function(adsManager) {
   if (adsManager.isCustomClickTrackingUsed()) {
     this.customClickDiv_.style.display = 'table';
   }
   // Attach the pause/resume events.
+  
   adsManager.addEventListener(
-      google.ima.AdEvent.Type.CONTENT_PAUSE_REQUESTED,
+      google.ima.AdEvent.Type.SKIPPABLE_STATE_CHANGED,
       this.onContentPauseRequested_,
       false,
       this);
@@ -109,6 +120,8 @@ Ads.prototype.processAdsManager_ = function(adsManager) {
       this.onAdError_,
       false,
       this);
+  //console.log(google.ima.AdErrorEvent.Type.AD_ERROR);
+
   var events = [google.ima.AdEvent.Type.ALL_ADS_COMPLETED,
                 google.ima.AdEvent.Type.CLICK,
                 google.ima.AdEvent.Type.COMPLETE,
@@ -120,16 +133,28 @@ Ads.prototype.processAdsManager_ = function(adsManager) {
                 google.ima.AdEvent.Type.THIRD_QUARTILE];
   for (var index in events) {
     adsManager.addEventListener(
-        events[index],
+        events[index],  
         this.onAdEvent_,
         false,
         this);
   }
+  for(var i in events){
+  adsManager.addEventListener(events[i],function(adEvent){
+      if(adEvent.type == google.ima.AdEvent.Type.COMPLETE) {
+        return adsManager.discardAdBreak();
+      }
+  });
+}
+
   
+
   var initWidth, initHeight;
   if (this.application_.fullscreen) {
+    console.log(this.application_.fullscreen);
     initWidth = this.application_.fullscreenWidth;
     initHeight = this.application_.fullscreenHeight;
+
+
   } else {
     initWidth = this.videoPlayer_.width;
     initHeight = this.videoPlayer_.height;
@@ -172,8 +197,17 @@ Ads.prototype.onAdEvent_ = function(adEvent) {
 
 Ads.prototype.onAdError_ = function(adErrorEvent) {
   this.application_.log('Ad error: ' + adErrorEvent.getError().toString());
+
   if (this.adsManager_) {
+    console.log(this.adsManager_);
     this.adsManager_.destroy();
   }
   this.application_.resumeAfterAd();
+
 };
+//Ads.prototype.onAdError_ =function(AdError) {
+  //this.application_.log('Ad errorcode'+AdError.getErrorCode());
+
+
+//}
+
