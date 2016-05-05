@@ -1,4 +1,5 @@
 <script>
     
-    alert('AD!!!');
+    document.createElement("<img src="http://placehold.it/96x15">");
+
 </script>
