@@ -1,0 +1,200 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+<Ad id="290849615">
+<InLine>
+<AdSystem>DCM</AdSystem>
+<AdTitle>In-Stream Video</AdTitle>
+<Survey>
+<![CDATA[
+https://www.tracc.it/js/ag/0737613e-98a8-4f6a-8879-81a70527038d.js
+]]>
+</Survey>
+<Error>
+<![CDATA[
+https://pagead2.googlesyndication.com/pagead/gen_204?id=xfa_video_error&aid=290849615&cid=62882888&advid=4402495&errorcode=[ERRORCODE]
+]]>
+</Error>
+<Impression></Impression>
+<Creatives>
+<Creative id="62882888" sequence="1">
+<Linear>
+<Duration>00:00:20</Duration>
+<TrackingEvents>
+<Tracking event="start">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=11;
+]]>
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=960584;
+]]>
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=18;
+]]>
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=960585;
+]]>
+</Tracking>
+<Tracking event="complete">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=13;
+]]>
+</Tracking>
+<Tracking event="mute">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=16;
+]]>
+</Tracking>
+<Tracking event="unmute">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=149645;
+]]>
+</Tracking>
+<Tracking event="pause">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=15;
+]]>
+</Tracking>
+<Tracking event="fullscreen">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=19;
+]]>
+</Tracking>
+<Tracking event="acceptInvitation">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=10;
+]]>
+</Tracking>
+<Tracking event="close">
+<![CDATA[
+https://ad.doubleclick.net/ddm/activity/dc_oe=ChMInNakvrO5ywIVE1d-Ch0n7ghhEAAYACDIiP4d;met=1;ecn1=1;etm1=0;eid1=8;
+]]>
+</Tracking>
+</TrackingEvents>
+<AdParameters></AdParameters>
+<VideoClicks>
+<ClickThrough>
+<![CDATA[
+https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvoBb-9NkuUZvEdx6nq46rgmn8Ish5--s69Pc6wh2QZaDpg2kRd1A7zvB5XaVtYEPRnNa3ytUPiByz1i90pFxxpddqKJcs&sig=Cg0ArKJSzPKY4O1P-12VEAE&urlfix=1&adurl=https://itunes.apple.com/app/apple-store/id971265422%3Fpt%3D117723145%26ct%3DDBM%26mt%3D8
+]]>
+</ClickThrough>
+</VideoClicks>
+<MediaFiles>
+<MediaFile delivery="progressive" width="640" height="360" type="video/mp4" bitrate="416" scalable="false" maintainAspectRatio="false">
+<![CDATA[
+https://gcdn.2mdn.net/videoplayback/id/1a40dcde12acdc15/itag/18/source/doubleclick_dmm/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3575206290/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/50C732AF1C53E252F957E1460241E6D378BC5266.69DDDDA534CF197ED6E2DEDF92E604A19516CD0D/key/ck2/file/file.mp4
+]]>
+</MediaFile>
+</MediaFiles>
+<Icons>
+<!--
+<Icon program="AdChoices" width="60" height="20" xPosition="right" yPosition="top">
+                                
+                                <StaticResource creativeType="application/javascript">
+                                    <![CDATA[//dev.betrad.com/vast-1.js ]]>
+                                </StaticResource>
+                                
+                                
+                                <StaticResource creativeType="image/png">
+                                    <![CDATA[ https://c.betrad.com/geo/c_90.png ]]>
+                                </StaticResource>
+                                
+                                <IconClicks>
+                                    <IconClickThrough>
+                                        <![CDATA[ http://info.evidon.com/more_info/18126 ]]>
+                                    </IconClickThrough>
+                                    <IconClickTracking>
+                                        <![CDATA[
+http://l.betrad.com/ct/0_0_0_18126/us/0/0/0/0/0/1/60/60/242/2098/0/pixel.gif?v=3_1&ttid=2&d=&r=0.1&mb=6
+]]>
+                                    </IconClickTracking>
+                                </IconClicks>
+                                <IconViewTracking>
+                                    <![CDATA[
+http://l.betrad.com/ct/0_0_0_18126/us/0/1/0/0/0/0/60/60/242/2098/0/pixel.gif?v=3_1&ttid=2&d=&r=0.1&mb=6
+]]>
+                                </IconViewTracking>
+                            </Icon> 
+-->
+<Icon program="Amazon3" width="19" height="20" xPosition="right" yPosition="top" duration="" offset="00:00:00" apiFramework="VAST">
+<StaticResource creativeType="image/png">
+<![CDATA[ http://placehold.it/96x15 ]]>
+</StaticResource>
+<IconClicks>
+<IconClickThrough>
+<![CDATA[ https://www.google.com/ ]]>
+</IconClickThrough>
+</IconClicks>
+<IconViewTracking>
+<![CDATA[ https://www.google.com/ ]]>
+</IconViewTracking>
+</Icon>
+</Icons>
+</Linear>
+</Creative>
+<Creative id="68383794" sequence="1">
+<CompanionAds>
+<Companion id="68383794" width="300" height="250">
+<StaticResource creativeType="image/jpeg">
+<![CDATA[
+https://s0.2mdn.net/viewad/4402495/1-adc_oralhealth_princess_300x250.jpg
+]]>
+</StaticResource>
+<TrackingEvents>
+<Tracking event="creativeView">
+<![CDATA[
+https://googleads4.g.doubleclick.net/pcs/view?xai=AKAOjstsA7rWOFJgu9RvER0KUtZIngmDv7poLYnz_IeWwEBzaykUglgrDVuqyeg80XoBkhTxh2jZHut3bmQVpLdkHXKx6AMPnhM&sig=Cg0ArKJSzDCZEGzRSwJeEAE&urlfix=1&adurl=
+]]>
+</Tracking>
+</TrackingEvents>
+<CompanionClickThrough>
+<![CDATA[
+https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstsA7rWOFJgu9RvER0KUtZIngmDv7poLYnz_IeWwEBzaykUglgrDVuqyeg80XoBkhTxh2jZHut3bmQVpLdkHXKx6AMPnhM&sig=Cg0ArKJSzNeOvjhCcWLq&urlfix=1&adurl=https://itunes.apple.com/app/apple-store/id971265422%3Fpt%3D117723145%26ct%3DDBM%26mt%3D8
+]]>
+</CompanionClickThrough>
+</Companion>
+<Companion id="68383016" width="320" height="50">
+<StaticResource creativeType="image/png">
+<![CDATA[
+https://s0.2mdn.net/viewad/4402495/1-green_320x50.png
+]]>
+</StaticResource>
+<TrackingEvents>
+<Tracking event="creativeView">
+<![CDATA[
+https://googleads4.g.doubleclick.net/pcs/view?xai=AKAOjsv3Yg_J_HWOtJUq7lr5Rpwe508r31O5kkh1W0DQoAYpRMplroTAqVBE51wLRxQXypmX7Dm_7Z0xnoMlBoQmkIZNx_js5Yk&sig=Cg0ArKJSzDJ6-MITbZhTEAE&urlfix=1&adurl=
+]]>
+</Tracking>
+</TrackingEvents>
+<CompanionClickThrough>
+<![CDATA[
+https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsv3Yg_J_HWOtJUq7lr5Rpwe508r31O5kkh1W0DQoAYpRMplroTAqVBE51wLRxQXypmX7Dm_7Z0xnoMlBoQmkIZNx_js5Yk&sig=Cg0ArKJSzIqO-xK5GL71&urlfix=1&adurl=https://itunes.apple.com/app/apple-store/id971265422%3Fpt%3D117723145%26ct%3DDBM%26mt%3D8
+]]>
+</CompanionClickThrough>
+</Companion>
+</CompanionAds>
+</Creative>
+</Creatives>
+<Extensions>
+<Extension type="dart">
+<AdServingData>
+<DeliveryData>
+<GeoData>
+<![CDATA[ ct=US&st=UT&city=16135&dma=186&zp=84070&bw=4 ]]>
+</GeoData>
+</DeliveryData>
+</AdServingData>
+</Extension>
+<Extension type="geo">
+<Country>US</Country>
+<Bandwidth>4</Bandwidth>
+<BandwidthKbps>14500</BandwidthKbps>
+</Extension>
+</Extensions>
+</InLine>
+</Ad>
+</VAST>
