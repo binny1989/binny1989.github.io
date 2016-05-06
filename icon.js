@@ -1,9 +1,9 @@
 window.onload = function(){
-var x = document.createElement("IMG");
-    x.setAttribute("src", "http://placehold.it/96x15");
-    x.setAttribute("width", "60");
-    x.setAttribute("height", "20");
-    document.body.appendChild(x);
-    document.getElementsByTagName('x') .style.zIndex='1';
-   
+var myIMG = document.createElement("IMG");
+    myIMG.setAttribute("src", "http://placehold.it/96x15");
+    myIMG.setAttribute("width", "60");
+    myIMG.setAttribute("height", "20");
+    document.body.appendChild(myIMG);
+    document.getElementsByTagName('IMG').style.zIndex='1000';
+
 }
