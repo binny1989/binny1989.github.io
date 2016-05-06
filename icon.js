@@ -5,4 +5,5 @@ var x = document.createElement("IMG");
     x.setAttribute("height", "20");
     document.body.appendChild(x);
     document.getElementsByTagName('x') .style.zIndex='1';
+   
 }
