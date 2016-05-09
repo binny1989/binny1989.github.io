@@ -5,8 +5,8 @@ var mydiv= document.createElement("div");
 	mydiv.setAttribute("width","70");
 	mydiv.setAttribute("height","30");
 	mydiv.setAttribute("onClick","window.location='https://www.facebook.com'");
-	document.getElementsByTagName('div').style.zIndex='1000';
 	document.body.appendChild(mydiv);
+	document.getElementsByTagName('div').style.zIndex='1000';
 
 var myIMG = document.createElement("IMG");
     myIMG.setAttribute("src", "http://placehold.it/96x15");
