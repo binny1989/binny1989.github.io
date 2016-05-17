@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.1.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="livecamplayer" style="width: 960px;">
+
+        <script src="http://cdnapi.kaltura.com/p/1897241/sp/189724100/embedIframeJs/uiconf_id/33256021/partner_id/1897241"></script>
+        <div id="kaltura_player_1452119480" style="width: 100%; height: 100%;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+            <span itemprop="name" content="CarbonTV Eagle Cam"></span>
+            <span itemprop="description" content=""></span>
+            <span itemprop="duration" content="85046"></span>
+            <span itemprop="thumbnail" content="http://cfvod.kaltura.com/p/1897241/sp/189724100/thumbnail/entry_id/0_na7kqw15/version/0/acv/42"></span>
+
+            <script>
+                kWidget.embed({
+                    "targetId": "kaltura_player_1452119480",
+                    "wid": "_1897241",
+                    "uiconf_id": 33256021,
+                    "flashvars": {
+                        "doubleClick": {
+                            "enableCountDown": true,
+                            "pauseAdOnClick": true,
+                            "countdownText": "ADVERTISEMENT",
+                            "disableCompanionAds": false,
+                            "htmlCompanions": "",
+                            "adsManagerLoadedTimeout": 5000,
+                            "leadWithFlash": false,
+                            "debugMode": false,
+                            "plugin": true,
+                            "adTagUrl": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&correlator=",
+
+                            "contentId": "{mediaProxy.entry.id}",
+                            "cmsId": "5858"
+                        },
+
+                        "streamerType": "auto"
+                    },
+                    "entry_id": "1_gffgxm38"
+                });
+            </script>
+        </div>
+        <script type="text/javascript">
+            kWidget.addReadyCallback(function(playerId) {
+                var playerId = playerId || 'kaltura_player_1452119480';
+                var kdp = document.getElementById(playerId);
+                kdp.kBind('adEnd', function() {
+                    setTimeout(function() {
+                        $('.dvrCallout').show();
+                        setTimeout(function() {
+                            $('.dvrCallout').hide();
+                        }, 60000);
+                    }, 30000);
+                });
+            });
+
+            $('document').ready(function() {
+                $('#video-player > div.dvrCallout > div.header > div.closer').on('click', function(evnt) {
+                    $('.dvrCallout').hide();
+                });
+            });
+        </script>
+</body>
+
+</html>

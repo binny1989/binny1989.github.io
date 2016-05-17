@@ -13,6 +13,7 @@ function setup() {
     return;
 
   adDisplayContainer = new google.ima.AdDisplayContainer($adsContainer.get(0));
+  console.log(adDisplayContainer);
   adDisplayContainer.initialize();
 
   // Re-use this AdsLoader instance for the entire lifecycle of your page.
@@ -50,6 +51,7 @@ function onAdsManagerLoaded(adsManagerLoadedEvent) {
   });
 
   var Type = google.ima.AdEvent.Type;
+  console.log(Type);
   adsManager.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, onAdError);
 
   adsManager.addEventListener(Type.AD_CAN_PLAY, logEvent);
@@ -101,8 +103,9 @@ function logEvent(e) {
 
 function requestAds(tag) {
   // Request video ads.
-
+alert("tag");
   if (adsManager) {
+    console.log(dsManager);
     adsManager.destroy();
     adsManager = null;
   }
