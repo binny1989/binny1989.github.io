@@ -1,69 +1,89 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
-<head>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.1.min.js"></script>
-</head>
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3_debug.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <script type="text/javascript" src="ads.js"></script>
+    <script type="text/javascript" src="video_player.js"></script>
 
-<body>
+    <!-- GPT Companion Code -->
+    <!-- Initialize the tagging library -->
+     <script type='text/javascript'>
+       var googletag = googletag || {};
+       googletag.cmd = googletag.cmd || [];
+       (function() {
+         var gads = document.createElement('script');
+         gads.async = true;
+         gads.type = 'text/javascript';
+         gads.src = '//www.googletagservices.com/tag/js/gpt.js';
+         var node = document.getElementsByTagName('script')[0];
+         node.parentNode.insertBefore(gads, node);
+       })();
+     </script>
 
+     <!-- Register your companion slots -->
+     <script type='text/javascript'>
+       googletag.cmd.push(function() {
+         // Supply YOUR_NETWORK/YOUR_UNIT_PATH in place of 6062/iab_vast_samples.
+         googletag.defineSlot('/6062/iab_vast_samples', [728, 90], 'companionDiv')
+             .addService(googletag.companionAds())
+             .addService(googletag.pubads());
+         googletag.companionAds().setRefreshUnfilledSlots(true);
+         googletag.pubads().enableVideoAds();
+         googletag.enableServices();
+       });
+     </script>
 
-    <div id="livecamplayer" style="width: 960px;">
+    <title>IMA HTML5 SDK Advanced Demo</title>
+  </head>
+  <body>
+  <div id="container">
+    <header>IMA HTML5 SDK Advanced Demo</header>
 
-        <script src="http://cdnapi.kaltura.com/p/1897241/sp/189724100/embedIframeJs/uiconf_id/33256021/partner_id/1897241"></script>
-        <div id="kaltura_player_1452119480" style="width: 100%; height: 100%;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-            <span itemprop="name" content="CarbonTV Eagle Cam"></span>
-            <span itemprop="description" content=""></span>
-            <span itemprop="duration" content="85046"></span>
-            <span itemprop="thumbnail" content="http://cfvod.kaltura.com/p/1897241/sp/189724100/thumbnail/entry_id/0_na7kqw15/version/0/acv/42"></span>
+    <center>
+      <label for="tag">Tag (<span id="sampleAdTag" class="urlLink">sample</span>):&nbsp;</label>
+      <input type="text" size="75" id="tagText" value="https://svastx.moatads.com/genvpaid2jstag4546435/skippable_vpaid.xml" />
+    </center>
 
-            <script>
-                kWidget.embed({
-                    "targetId": "kaltura_player_1452119480",
-                    "wid": "_1897241",
-                    "uiconf_id": 33256021,
-                    "flashvars": {
-                        "doubleClick": {
-                            "enableCountDown": true,
-                            "pauseAdOnClick": true,
-                            "countdownText": "ADVERTISEMENT",
-                            "disableCompanionAds": false,
-                            "htmlCompanions": "",
-                            "adsManagerLoadedTimeout": 5000,
-                            "leadWithFlash": false,
-                            "debugMode": false,
-                            "plugin": true,
-                            "adTagUrl": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&correlator=",
+    <div id="videoplayer">
+      <video id="content">
+        <source src="http://pmdlive-a.akamaihd.net/dc-1/m/ny-live-publish4/kLive/smil:1_gffgxm38_all.smil/32/chunklist.m3u8"></source>
+      </video>
+      <div id="adcontainer">
+      </div>
+      <button id="playpause" title="Play/Pause">&#9654;</button>
+      <button id="fullscreen" title="Full screen">[&nbsp;&nbsp;&nbsp;]</button>
+    </div>
 
-                            "contentId": "{mediaProxy.entry.id}",
-                            "cmsId": "5858"
-                        },
+    <div id="customClick">
+      <div id="customClickTextWrapper">Click here for more info on your ad.</div>
+    </div>
 
-                        "streamerType": "auto"
-                    },
-                    "entry_id": "1_gffgxm38"
-                });
-            </script>
-        </div>
-        <script type="text/javascript">
-            kWidget.addReadyCallback(function(playerId) {
-                var playerId = playerId || 'kaltura_player_1452119480';
-                var kdp = document.getElementById(playerId);
-                kdp.kBind('adEnd', function() {
-                    setTimeout(function() {
-                        $('.dvrCallout').show();
-                        setTimeout(function() {
-                            $('.dvrCallout').hide();
-                        }, 60000);
-                    }, 30000);
-                });
-            });
+    <!-- Declare a div where you want the companion to appear. Use
+          googletag.display() to make sure the ad is displayed. -->
+    <div id="companionDiv">
+      <script type="text/javascript">
+        // Using the command queue to enable asynchronous loading.
+        // The unit will not actually display now - it will display when
+        // the video player is displaying the ads.
+        googletag.cmd.push(function() { googletag.display('companionDiv'); });
+      </script>
+    </div>
 
-            $('document').ready(function() {
-                $('#video-player > div.dvrCallout > div.header > div.closer').on('click', function(evnt) {
-                    $('.dvrCallout').hide();
-                });
-            });
-        </script>
-</body>
+    <div id="console">
+    Welcome to IMA HTML5 SDK Demo!
+    </div>
 
+    <footer>Copyright (C) 2013 Google Inc.</footer>
+  </div>
+  <script type="text/javascript">
+  var application = null;
+
+  window.onload = function() {
+    application = new Application();
+  };
+  </script>
+  </body>
 </html>
