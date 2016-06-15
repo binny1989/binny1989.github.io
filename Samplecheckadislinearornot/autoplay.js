@@ -34,7 +34,10 @@ function setUpIMA() {
 
   // Request video ads.
   var adsRequest = new google.ima.AdsRequest();
-  adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=%2F35012960%2Fhuffingtonpost.it%2Fvideo%2Fx01&gdfp_req=1&env=vp&output=xml_vast3&unviewed_position_start=1&url=http%3A%2F%2Fm.huffpost.com%2Fit%2Fentry%2F10353820%3Futm_hp_ref%3Dvideo&correlator=1944404563281579&cust_params=rdzprll%3Dskpf%26abtest%3DA%26cnt%3D0%26&eid=41351016&sdkv=h.3.133.0&sdki=5&scor=3409346205605811&adk=2996480511&osd=2&frm=2&sdr=1&ged=ve4_td15_tt1_pd15_la15000_er0.0.387.640_vi0.0.387.640_vp100_eb24427';
+  adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
+      'sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&' +
+      'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
+      'cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
   // select the correct creative if multiple are returned.
@@ -60,16 +63,6 @@ function playAds() {
   videoContent.load();
   adDisplayContainer.initialize();
 
-  try {
-    // Initialize the ads manager. Ad rules playlist will start at this time.
-    adsManager.init(640, 360, google.ima.ViewMode.NORMAL);
-    // Call play to start showing the ad. Single video and overlay ads will
-    // start at this time; the call will be ignored for ad rules.
-    adsManager.start();
-  } catch (adError) {
-    // An error may be thrown if there was a problem with the VAST response.
-    videoContent.play();
-  }
 }
 
 function onAdsManagerLoaded(adsManagerLoadedEvent) {
@@ -104,6 +97,17 @@ function onAdsManagerLoaded(adsManagerLoadedEvent) {
   adsManager.addEventListener(
       google.ima.AdEvent.Type.COMPLETE,
       onAdEvent);
+      
+       try {
+    // Initialize the ads manager. Ad rules playlist will start at this time.
+    adsManager.init(640, 360, google.ima.ViewMode.NORMAL);
+    // Call play to start showing the ad. Single video and overlay ads will
+    // start at this time; the call will be ignored for ad rules.
+    adsManager.start();
+  } catch (adError) {
+    // An error may be thrown if there was a problem with the VAST response.
+    videoContent.play();
+  }
 }
 
 function onAdEvent(adEvent) {
