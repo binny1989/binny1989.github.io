@@ -1,0 +1,49 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+<Ad id="1234567">
+<InLine>
+<AdSystem>GDFP</AdSystem>
+<AdTitle>Linear VPAID Example</AdTitle>
+<Description>Vpaid Linear Video Ad</Description>
+<Error>http://www.example.com/error</Error>
+<Impression>http://www.example.com/impression</Impression>
+<Creatives>
+<Creative sequence="1">
+<Linear>
+<Duration>00:00:13</Duration>
+<TrackingEvents>
+<Tracking event="start">http://www.example.com/start</Tracking>
+<Tracking event="firstQuartile">http://www.example.com/firstQuartile</Tracking>
+<Tracking event="midpoint">http://www.example.com/midpoint</Tracking>
+<Tracking event="thirdQuartile">http://www.example.com/thirdQuartile</Tracking>
+<Tracking event="complete">http://www.example.com/complete</Tracking>
+<Tracking event="mute">http://www.example.com/mute</Tracking>
+<Tracking event="unmute">http://www.example.com/unmute</Tracking>
+<Tracking event="rewind">http://www.example.com/rewind</Tracking>
+<Tracking event="pause">http://www.example.com/pause</Tracking>
+<Tracking event="resume">http://www.example.com/resume</Tracking>
+<Tracking event="fullscreen">http://www.example.com/fullscreen</Tracking>
+<Tracking event="creativeView">http://www.example.com/creativeView</Tracking>
+<Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>
+</TrackingEvents>
+<AdParameters>
+<![CDATA[
+{ "videos":[ {"url":"https://video.webmfiles.org/big-buck-bunny_trailer.webm","mimetype":"video/webm"} ], "overlay":"https://ryanthompson591.github.io/vpaidExamples/img/ClickMe.jpg", "viralize_player_url": "https://ads.viralize.tv/player/?f=instream&cid=1607&preview=1&fmt=instream-player&type=json" }
+]]>
+</AdParameters>
+<VideoClicks>
+<ClickThrough id="123">http://google.com</ClickThrough>
+<ClickTracking id="123">http://www.example.com/click</ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile apiFramework="VPAID" type="application/javascript">
+https://viralize.github.io/vpaid_adapter/scripts/vpaid.js
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+<Creative sequence="1"/>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
