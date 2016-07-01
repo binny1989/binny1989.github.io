@@ -45,7 +45,7 @@ var VpaidVideoPlayer = function() {
     'duration': 30,
     'expanded' : false,
     'height' : 0,
-    'icons' : false,
+    'icons' : true,
     'linear' : true,
     'remainingTime' : 13,
     'skippableState' : false,
