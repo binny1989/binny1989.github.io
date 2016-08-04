@@ -141,11 +141,11 @@ Ads.prototype.processAdsManager_ = function(adsManager) {
 
 Ads.prototype.onContentPauseRequested_ = function() {
   this.application_.pauseForAd();
-  this.application_.setVideoEndedCallbackEnabled(false);
+  //this.application_.setVideoEndedCallbackEnabled(false);
 };
 
 Ads.prototype.onContentResumeRequested_ = function() {
-  this.application_.setVideoEndedCallbackEnabled(true);
+  //this.application_.setVideoEndedCallbackEnabled(true);
   // Without this check the video starts over from the beginning on a
   // post-roll's CONTENT_RESUME_REQUESTED
   if (!this.contentCompleteCalled_) {
