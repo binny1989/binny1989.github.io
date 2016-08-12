@@ -34,7 +34,7 @@ function setUpIMA() {
 
   // Request video ads.
   var adsRequest = new google.ima.AdsRequest();
-  adsRequest.adTagUrl = 'http://pubads.g.doubleclick.net/gampad/ads?slotname=/7299/mytv.pc.web.dev/ed_latestdrama/prog/ep/catchup&sz=1024x768&ciu_szs=&unviewed_position_start=1&output=xml_vast3&impl=s&env=vp&gdfp_req=1&ad_rule=0&vad_type=linear&vpos=preroll&pod=1&pmnd=0&pmxd=95000&pmad=3&cust_params=dtype%3Dpc%26user%3Dguest%26vtype%3Dcatchup%26channel%3Dhdjade%2Cjade%26category%3Ddrama%26programme%3Dwuxinthemonsterkiller%26episode%3D9%26pay%3Dfree%26adtype%3Dvideo&url=http://mytv.tvb.com/tc/ed_latestdrama/wuxinthemonsterkiller/226513&dt=1452070564754&adk=10866309&scor=1828669504880640&osd=6&frm=0&video_doc_id=226513&cmsid=390&sdkv=3.220.0&sdr=1&kfa=0&tfcd=0';
+  adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
   // select the correct creative if multiple are returned.
