@@ -12,15 +12,10 @@ var videoContent;
 var testButton
 
 function init() {
-    videoContent = document.getElementById('contentElement');
-    videoContent.addEventListener("click",function(url){
-    
-});
     
    testButton = document.getElementById('playButton');
     testButton.addEventListener('click', function(e){
         e.preventDefault();
-    //setUpIMA();
     requestAds();
     });
 
