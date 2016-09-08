@@ -1,0 +1,111 @@
+VAST xmlns:MM="http://api.mediamind.com/V1/DataContracts" version="2.0">
+<Ad id="18782112">
+<InLine>
+<AdSystem>
+<![CDATA[ MediaMind ]]>
+</AdSystem>
+<AdTitle>
+<![CDATA[ AF-683 INVICTUS 20&#39;&#39; VI 768x432 PAL_1_1 ]]>
+</AdTitle>
+<Description>
+<![CDATA[ AF-683 INVICTUS 20&#39;&#39; VI 768x432 PAL_1_1 ]]>
+</Description>
+<Impression id="Impression">
+<![CDATA[
+https://bs.serving-sys.com/Serving?cn=display&c=24&pl=VAST&optOut=0&pos=8074&c=24&ai=38578415&pluid=0&ord=450116265921346600&dg=7221316&sdg=11093730&ta=-1&sessionid=6181113273100667479&pcp=&vurl=&ebaddid=&ebappname=&ebappid=&ebmblat=&ebmblong=
+]]>
+</Impression>
+<Impression id="AgencyImpTrackingURL_1">
+<![CDATA[
+http://b.scorecardresearch.com/p?c1=3&c2=16812369&c3=681766&c4=38578415&c5=18782112&c6=&c10=1&c11=Perform%20Group%20UK&c13=[%tp_PlacementBannerSize%]&c16=szk&cj=1&ax_fwd=1&rn=450116265921346600&
+]]>
+</Impression>
+<Creatives>
+<Creative id="38578415" AdID="38578415" sequence="1">
+<Linear>
+<Duration>00:00:20</Duration>
+<TrackingEvents>
+<Tracking event="creativeView">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5ECreativeView.Linear.145265429%7E0%7E0%7E1%7E0%7E0%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="creativeView">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5Eadstart%7E0%7E0%7E1%7E0%7E2%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="start">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebVideoStarted%7E0%7E0%7E1%7E0%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5Eeb25Per_Played%7E0%7E0%7E1%7E0%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5Eeb50Per_Played%7E0%7E0%7E1%7E0%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5Eeb75Per_Played%7E0%7E0%7E1%7E0%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="complete">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebVideoFullPlay%7E0%7E0%7E1%7E0%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="mute">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebVideoMute%7E0%7E0%7E1%7E1%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="unmute">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebVideoUnmute%7E0%7E0%7E1%7E1%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="pause">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebVideoPause%7E0%7E0%7E1%7E1%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+<Tracking event="fullscreen">
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EebFSStart%7E0%7E0%7E1%7E1%7E1%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479
+]]>
+</Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickThrough>
+<![CDATA[
+https://bs.serving-sys.com/Serving/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=38578415%7E%7E0%5EClick.Linear.145265429%7E0%7E1%7E1%7E0%7E0%7E145265429%7E0&pos=8074&ebRandom=450116265921346600&dg=7221316&ta=-1&sessionid=6181113273100667479&rtu=$$http://www.pacorabanne.com/en/fragrances/invictus?utm_source=Perform&utm_medium=Post-RollNon-Skipable-FIX-SEG&utm_term=PR-INV&utm_content=MA-BRAN&utm_campaign=InvictusMaintenance-GBR$$
+]]>
+</ClickThrough>
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="145265428" height="432" width="768" bitrate="1596" type="video/x-flv" delivery="progressive" maintainAspectRatio="true" scalable="true">
+<![CDATA[
+https://secure-ds.serving-sys.com/BurstingRes/Site-44161/Type-12/c0f7259c-d297-483e-ad6e-c214295231ee.flv
+]]>
+</MediaFile>
+<MediaFile id="145265429" height="432" width="768" bitrate="1312" type="video/mp4" delivery="progressive" maintainAspectRatio="true" scalable="true">
+<![CDATA[
+https://secure-ds.serving-sys.com/BurstingRes/Site-44161/Type-16/183e318a-9cd9-4c49-9850-324b30065cff.mp4
+]]>
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+<Creative id="38578415" AdID="38578415" sequence="1">
+<CompanionAds/>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
