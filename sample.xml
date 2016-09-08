@@ -1,4 +1,4 @@
-VAST xmlns:MM="http://api.mediamind.com/V1/DataContracts" version="2.0">
+<VAST xmlns:MM="http://api.mediamind.com/V1/DataContracts" version="2.0">
 <Ad id="18782112">
 <InLine>
 <AdSystem>
