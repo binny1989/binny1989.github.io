@@ -24,7 +24,12 @@ position: absolute;
   height: 360px;
   overflow: hidden;
 }
-
+#rawvast{
+  margin-top:10px;
+  margin-bottom:10px;
+  height: 60px; 
+  width:350px; 
+}
 #playButton {
   margin-top:10px;
   vertical-align: top;
