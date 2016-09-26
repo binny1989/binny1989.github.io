@@ -1,0 +1,29 @@
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
+<vmap:AdBreak breakType="linear,nonlinear" breakId="adbreak1" timeOffset="start">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="adbreak1-ad-1">
+<vmap:AdTagURI>
+<![CDATA[
+https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvpaid&correlator=
+]]>
+</vmap:AdTagURI>
+</vmap:AdSource>
+</vmap:AdBreak>
+<vmap:AdBreak breakType="linear,nonlinear" breakId="adbreak2" timeOffset="00:00:10.000">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="adbreak2-ad-1">
+<vmap:AdTagURI>
+<![CDATA[
+http://www.adotube.com/kernel/vast/vast.php?omlSource=http://www.adotube.com/php/services/player/OMLService.php?avpid=UDKjuff&ad_type=pre-rolls&platform_version=vast20as3&vpaid=1&rtb=0&publisher=adotube.com&title=[VIDEO_TITLE&tags=[VIDEO_TAGS]&description=[VIDEO_DESCRIPTION]&videoURL=[VIDEO_FILE_URL]
+]]>
+</vmap:AdTagURI>
+</vmap:AdSource>
+</vmap:AdBreak>
+<vmap:AdBreak breakType="linear,nonlinear" breakId="adbreak3" timeOffset="end">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="adbreak3-ad-1">
+<vmap:AdTagURI>
+<![CDATA[
+http://playertest.longtailvideo.com/assets/vast/vpaid/vpaid-linear-v2-skippable.xml
+]]>
+</vmap:AdTagURI>
+</vmap:AdSource>
+</vmap:AdBreak>
+</vmap:VMAP>
